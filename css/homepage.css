@@ -1,0 +1,15 @@
+.header{
+    width:100%;
+    height:20px;
+    background-color: blueviolet;
+
+}
+.banner{
+    background:url(/images/dispensary.jpg);
+    background-size: cover;
+}
+.homepagecontainer{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+}
