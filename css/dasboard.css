@@ -61,8 +61,8 @@ ul.dashboard_menu_lists li  a{
 
 
 }
-ul.dashboard_menu_lists li  a{
-    font-size:20px;
+ul.dashboard_menu_lists li  a i{
+    font-size:25px;
 }
 ul.dashboard_menu_lists li.menuactive{
     background: #f685a1;
