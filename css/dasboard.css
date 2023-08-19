@@ -58,6 +58,9 @@ ul.dashboard_menu_lists li  a{
 
 
 }
+ul.dashboard_menu_lists li  a{
+    font-size:25px;
+}
 ul.dashboard_menu_lists li.menuactive{
     background: #f685a1;
     color:#fff;
@@ -82,4 +85,12 @@ ul.dashboard_menu_lists li:hover{
 a#logoutButton{
     float: right;
 
+}
+.dashboard_content_main{
+    padding:50px 10px 10px 10px ;
+}
+.dashboard_content_main{
+    background: #fff;
+    height:100%;
+    min-height: 800px;
 }
