@@ -1,0 +1,21 @@
+.dashboardMainContainer{
+    display:flex;
+    flex-direction: row;
+
+}
+.dashboard_sidebar{
+    width:20%;
+    background: #323232;
+    height:100vh;
+
+}
+.dashboard_content_container{
+    width:70%;
+    
+}
+h3.dashboard_logo{
+    color:#f685a1;
+    font-size:80px;
+    text-align: center;
+
+}
