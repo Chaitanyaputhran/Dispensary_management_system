@@ -17,5 +17,23 @@ h3.dashboard_logo{
     color:#f685a1;
     font-size:80px;
     text-align: center;
+    margin-bottom: 10%;
+
+}
+.dashboard_sidebar_user{
+   text-align:center;
+   position: relative;
+   padding-bottom: 20px;
+   border-bottom:1px solid #fff;
+    top:1%;
+}
+.dashboard_sidebar_user img{
+    width:60px;
+    display:inline-block;
+    border-radius:50px;
+    border:2px solid #f685a1;
+    margin-right:5px;
+    margin-left:120px;
+    
 
 }
