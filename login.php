@@ -1,3 +1,20 @@
+<?php
+if($_POST){
+    var_dump('$_POST');
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+}
+
+
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +31,7 @@
             <H2>DISPENSARY MANAGEMENT SYSTEM</H2>
         </div>
         <div class="body">
-            <form action="login.php" method="GET">
+            <form action="login.php" method="POST">
                 <div>
                     <label for ="">Username</label>
                     <input type="text" name="username" placeholder="username" />
