@@ -3,6 +3,8 @@ if($_POST){
     var_dump('$_POST');
     $username=$_POST['username'];
     $password=$_POST['password'];
+
+    include('database/connection.php');
 }
 
 

@@ -6,9 +6,9 @@
 
    //connecting to database
    try{
-    $conn = new PDO("mysql:host=$servername;dbname=dispensary",$username,$password);
+    $conn = new PDO("mysql:host=$servername;dbname=dispensary" ,$username ,$password);
     //set the PDO error mode to exception.
-    $conn->setAttribute(PDO::ATTR_ERRMODE_EXCEPTION);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo 'Connected Successfully';
 
    }catch(\Exception $e){
