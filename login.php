@@ -29,9 +29,17 @@ if($_POST){
 
 </head>
 <body >
+    <?php
+    if(!empty($error_message)){
+
+    
+
+?>
+ 
     <div class =error>
         <p>Error:  <?= $error_message ?></p>
     </div>
+    <?php}?>
     <div class="container">
         <div class ="top">
             <h1>DMS</h1>
