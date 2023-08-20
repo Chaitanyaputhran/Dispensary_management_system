@@ -12,7 +12,7 @@
         <div class="dashboard_sidebar" id ="dashboard_sidebar">
             <h3 class = "dashboard_logo" id="dashboard_logo">DMS</h3>
             <div class ="dashboard_sidebar_user">
-                <img src="/images/user/dms.jpg" alt="user image" id="userimage"/>
+                <img src="./images/user/dms.jpg" alt="user image" id="userimage"/>
                 <span >User</span>
 
             </div>

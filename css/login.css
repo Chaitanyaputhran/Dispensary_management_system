@@ -1,3 +1,5 @@
 .container{
-    background-image: url('/images/dispensary.jpg');
+    background-image: url('../images/dispensary.jpg');
+    background-size: cover;
+    height:300px;
 }
