@@ -1,8 +1,10 @@
 <?php
+ $error_message='';
 if($_POST){
     var_dump('$_POST');
     $username=$_POST['username'];
     $password=$_POST['password'];
+   
 
     include('database/connection.php');
 }
@@ -28,7 +30,7 @@ if($_POST){
 </head>
 <body >
     <div class =error>
-        <p>Error</p>
+        <p>Error:  <?= $error_message ?></p>
     </div>
     <div class="container">
         <div class ="top">
