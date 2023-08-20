@@ -3,3 +3,12 @@
     background-size: cover;
     height:300px;
 }
+.error{
+    background: #fff;
+    text-align:center;
+    color:red;
+    font-size:20px;
+    padding:11px;
+
+
+}
