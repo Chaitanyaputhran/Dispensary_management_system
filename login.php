@@ -26,7 +26,10 @@ if($_POST){
     <link rel="stylesheet" type="text/css" href="css/login.css">
 
 </head>
-<body>
+<body >
+    <div class =error>
+        <p>Error</p>
+    </div>
     <div class="container">
         <div class ="top">
             <h1>DMS</h1>
