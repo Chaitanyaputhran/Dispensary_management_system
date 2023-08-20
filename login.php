@@ -12,7 +12,7 @@ if($_POST){
     $stmt->execute();
     if($stmt->rowCount()>0){
 
-    }else $
+    }else $error_message='Please make sure that username and password are correct';
 
     var_dump($stmt->rowCount());
     die;
