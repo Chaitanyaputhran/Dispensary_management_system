@@ -1,12 +1,24 @@
 <?php
  $error_message='';
 if($_POST){
-    var_dump('$_POST');
-    $username=$_POST['username'];
-    $password=$_POST['password'];
-   
 
     include('database/connection.php');
+   
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+
+    $query ='SELECT *FROM users where users.email="'.$username.'" AND users.password ="'. $password .'" ';
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    if($stmt->rowCount()>0){
+
+    }else $
+
+    var_dump($stmt->rowCount());
+    die;
+   
+
+   
 }
 
 
@@ -39,7 +51,7 @@ if($_POST){
     <div class =error>
         <p>Error:  <?= $error_message ?></p>
     </div>
-    <?php}?>
+    <?php } ?>
     <div class="container">
         <div class ="top">
             <h1>DMS</h1>
