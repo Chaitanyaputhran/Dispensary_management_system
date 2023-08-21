@@ -1,7 +1,7 @@
 <?php
 //start the session
 session_start();
-if(!isset($_SESSION['user'])) header('location:index.php');
+if(!isset($_SESSION['user'])) header('location:login.php');
 
 
 $user = ($_SESSION['user']);
