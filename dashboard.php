@@ -1,3 +1,9 @@
+<?php
+//start the session
+session_start();
+$user = ($_SESSION['user']);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +19,7 @@
             <h3 class = "dashboard_logo" id="dashboard_logo">DMS</h3>
             <div class ="dashboard_sidebar_user">
                 <img src="./images/user/dms.jpg" alt="user image" id="userimage"/>
-                <span >User</span>
+                <span ><?=$user['firstname'] .' '.$user['lastname'] ?></span>
 
             </div>
             <div class ="dashboard_sidebar_menus">
