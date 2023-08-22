@@ -18,15 +18,8 @@ $user = ($_SESSION['user']);
 </head>
 <body>
     <div class="dashboardMainContainer" id="dashboardMainContainer">
-        <div class="dashboard_sidebar" id ="dashboard_sidebar">
-            <h3 class = "dashboard_logo" id="dashboard_logo">DMS</h3>
-            <div class ="dashboard_sidebar_user">
-                <img src="./images/user/dms.jpg" alt="user image" id="userimage"/>
-                <span ><?=$user['firstname'] .' '.$user['lastname'] ?></span>
-
-            </div>
-            
-        </div>
+        
+       
         <div class = "dashboard_content_container" id="dashboard_content_container">
             <div class="dashboard_content_topNav">
                 
