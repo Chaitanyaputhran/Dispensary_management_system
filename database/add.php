@@ -30,7 +30,7 @@ catch(PDOException $e ){
 
 }
 $_SESSION['response'] = $response;
-header('location: ../usersadd.php');
+header('location: ../user_add.php');
 
 
 

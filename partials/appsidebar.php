@@ -14,6 +14,9 @@
                     <li>
                         <a href="./user_add.php"><i class="fa fa-user-plus "></i><span class="menutext">Add user</span></a>
                     </li>
+                    <li>
+                        <a href="./user_add.php"><i class="fa fa-user-plus "></i><span class="menutext">Add user</span></a>
+                    </li>
 
                 </ul>
 
