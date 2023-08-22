@@ -7,11 +7,12 @@
             </div>
             <div class ="dashboard_sidebar_menus">
                 <ul class="dashboard_menu_lists" >
-                    <li class="menuactive">
-                        <a href="" ><i class="fa fa-dashboard "></i><span class="menutext">Dashboard</span></a>
+                    <!----class="menuactive"---->
+                    <li >
+                        <a href="./dashboard.php" ><i class="fa fa-dashboard "></i><span class="menutext">Dashboard</span></a>
                     </li>
                     <li>
-                        <a href=""><i class="fa fa-dashboard "></i><span class="menutext">Dashboard</span></a>
+                        <a href="./user_add.php"><i class="fa fa-user-plus "></i><span class="menutext">Add user</span></a>
                     </li>
 
                 </ul>

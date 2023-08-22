@@ -18,32 +18,11 @@ $user = ($_SESSION['user']);
 </head>
 <body>
     <div class="dashboardMainContainer" id="dashboardMainContainer">
-        <div class="dashboard_sidebar" id ="dashboard_sidebar">
-            <h3 class = "dashboard_logo" id="dashboard_logo">DMS</h3>
-            <div class ="dashboard_sidebar_user">
-                <img src="./images/user/dms.jpg" alt="user image" id="userimage"/>
-                <span ><?=$user['firstname'] .' '.$user['lastname'] ?></span>
-
-            </div>
-            <div class ="dashboard_sidebar_menus">
-                <ul class="dashboard_menu_lists" >
-                    <li class="menuactive">
-                        <a href="" ><i class="fa fa-dashboard "></i><span class="menutext">Dashboard</span></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-dashboard "></i><span class="menutext">Dashboard</span></a>
-                    </li>
-
-                </ul>
-
-            </div>
-        </div>
+        <?php include('partials/appsidebar.php')?>
+       
         <div class = "dashboard_content_container" id="dashboard_content_container">
-            <div class="dashboard_content_topNav">
-                
-                <a href="" id="togglebutton"><i class="fa fa-navicon"></i></a>
-                <a href="database/logout.php" id="logoutButton"><i class="fa fa-power-off"></i>Log-out</a>
-            </div>
+        <?php include('partials/apptopnav.php')?>
+           
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
                     

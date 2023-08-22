@@ -18,14 +18,11 @@ $user = ($_SESSION['user']);
 </head>
 <body>
     <div class="dashboardMainContainer" id="dashboardMainContainer">
-        
+        <?php include('partials/appsidebar.php')?>
        
         <div class = "dashboard_content_container" id="dashboard_content_container">
-            <div class="dashboard_content_topNav">
-                
-                <a href="" id="togglebutton"><i class="fa fa-navicon"></i></a>
-                <a href="database/logout.php" id="logoutButton"><i class="fa fa-power-off"></i>Log-out</a>
-            </div>
+        <?php include('partials/apptopnav.php')?>
+           
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
                     
