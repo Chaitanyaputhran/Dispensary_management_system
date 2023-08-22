@@ -25,41 +25,41 @@ $user = ($_SESSION['user']);
            
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
-                    
+                <form action="" method="post">
+                        <div>
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" required/>
+                        </div>
+                        <div>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" required/>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required/>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required/>
+                        </div>
+                        <div>
+                            <label for="created_at">Created At</label>
+                            <input type="text" id="created_at" name="created_at" value="<?php echo date('Y-m-d H:i:s'); ?>" readonly/>
+                        </div>
+                        <div>
+                            <label for="updated_at">Updated At</label>
+                            <input type="text" id="updated_at" name="updated_at" value="<?php echo date('Y-m-d H:i:s'); ?>" readonly/>
+                        </div>
+                        <div>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-
         </div>
     </div>
-    <script >
-    var sideBarIsOpen='true';
-togglebutton.addEventListener('click',(event) =>{
-    event.preventDefault();
-    if(sideBarIsOpen){
-    dashboard_sidebar.style.width='10%';
-    dashboard_sidebar.style.transition='0.3s all';
-    dashboard_content_container.style.width='90%';
-    dashboard_logo.style.fontsize= '60px';
-    userimage.style.width='60px';
-    menuicons=document.getElementsByClassName('menutext');
-    for(var i=0;i<menuicons.length;i++){
-    menuicons[i].style.display='none';
-    }
-    document.getElementsByClassName('dashboard_menu_lists')[0].style.textAlign='center';
-    sideBarIsOpen=false;}else{
-        dashboard_sidebar.style.width='20%';
-    dashboard_content_container.style.width='80%';
-    dashboard_logo.style.fontsize= '80px';
-    userimage.style.width='80px';
-    menuicons=document.getElementsByClassName('menutext');
-    for(var i=0;i<menuicons.length;i++){
-    menuicons[i].style.display='inline-block';
-    }
-    document.getElementsByClassName('dashboard_menu_lists')[0].style.textAlign='left';
-    sideBarIsOpen=true;
-    }
-    
-});
+    <script src="js/dashboard.js" >
+   
 </script>
     
 </body>
