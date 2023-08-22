@@ -2,6 +2,7 @@
 //start the session
 session_start();
 if(!isset($_SESSION['user'])) header('location:login.php');
+$_SESSION['table'] = 'users';
 
 
 $user = ($_SESSION['user']);
@@ -25,7 +26,7 @@ $user = ($_SESSION['user']);
            
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
-                <form action="database/user_add.php" method="POST" class="appForm">
+                <form action="database/add.php" method="POST" class="appForm">
                         <div>
                             <label for="firstname">First Name</label>
                             <input type="text" id="firstname" name="firstname" required/>
@@ -51,10 +52,25 @@ $user = ($_SESSION['user']);
                             <input type="text" id="updated_at" name="updated_at" value="<?php echo date('Y-m-d H:i:s'); ?>" readonly/>
                         </div>
                         <div>--->
+                           
                             <button type="submit"><i class="fa fa-send"></i>Add User</button>
                           
-                        </div>
+                      
                     </form>
+                    <?php if(isset($_SESSION['response'])) {
+                        $response_message= $_SESSION['response']['message'];
+                        $is_success= $_SESSION['response']['success'];
+                        
+                        ?>
+                        <div class ="responseMessage">
+                            <p class="<?= $is_success ? 'responseMessage__success' : 'responseMessage__error' ?>">
+                            <?= $response_message ?>
+                        </p>
+
+
+                    </div>
+
+                        <?php unset($_SESSION['response']);} ?>
                 </div>
             </div>
         </div>
