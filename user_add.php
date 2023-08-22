@@ -25,7 +25,7 @@ $user = ($_SESSION['user']);
            
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
-                <form action="" method="post">
+                <form action="database/user_add.php" method="POST" class="appForm">
                         <div>
                             <label for="firstname">First Name</label>
                             <input type="text" id="firstname" name="firstname" required/>
@@ -42,7 +42,7 @@ $user = ($_SESSION['user']);
                             <label for="password">Password</label>
                             <input type="password" id="password" name="password" required/>
                         </div>
-                        <div>
+                        <!---<div>
                             <label for="created_at">Created At</label>
                             <input type="text" id="created_at" name="created_at" value="<?php echo date('Y-m-d H:i:s'); ?>" readonly/>
                         </div>
@@ -50,8 +50,9 @@ $user = ($_SESSION['user']);
                             <label for="updated_at">Updated At</label>
                             <input type="text" id="updated_at" name="updated_at" value="<?php echo date('Y-m-d H:i:s'); ?>" readonly/>
                         </div>
-                        <div>
-                            <button type="submit">Submit</button>
+                        <div>--->
+                            <button type="submit"><i class="fa fa-send"></i>Add User</button>
+                          
                         </div>
                     </form>
                 </div>
