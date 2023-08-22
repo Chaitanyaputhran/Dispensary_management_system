@@ -25,18 +25,7 @@ $user = ($_SESSION['user']);
                 <span ><?=$user['firstname'] .' '.$user['lastname'] ?></span>
 
             </div>
-            <div class ="dashboard_sidebar_menus">
-                <ul class="dashboard_menu_lists" >
-                    <li class="menuactive">
-                        <a href="" ><i class="fa fa-dashboard "></i><span class="menutext">Dashboard</span></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-dashboard "></i><span class="menutext">Dashboard</span></a>
-                    </li>
-
-                </ul>
-
-            </div>
+            
         </div>
         <div class = "dashboard_content_container" id="dashboard_content_container">
             <div class="dashboard_content_topNav">
