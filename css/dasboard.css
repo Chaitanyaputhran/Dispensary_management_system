@@ -48,31 +48,33 @@ ul.dashboard_menu_lists{
     padding:5px;
     margin-top:20px;
 }
-ul.dashboard_menu_lists li{
-    padding:15px 15px;
+ul.dashboard_menu_lists li.limainmenu{
+    padding-top:15px;
   
     text-transform: uppercase;
 
 
 }
-ul.dashboard_menu_lists li  a{
+ul.dashboard_menu_lists li.limainmenu  a{
     text-decoration: none;
     color:#fff;
     height:100%;
     display:block;
     font-size:20px;
+    padding:0px 15px;
+    padding-bottom:15px;
 
 
 }
-ul.dashboard_menu_lists li  a i{
+ul.dashboard_menu_lists li.limainmenu  a i{
     font-size:25px;
 }
-ul.dashboard_menu_lists li.menuactive{
+ul.dashboard_menu_lists li.limainmenu.menuactive{
     background: #f685a1;
     color:#fff;
 
 }
-ul.dashboard_menu_lists li:hover{
+ul.dashboard_menu_lists li.limainmenu:hover{
     background: #f685a1;
     color:#fff;
     transition:0.3s all;
@@ -100,6 +102,7 @@ a#logoutButton{
     height:100%;
     min-height: 800px;
 }
+/*
 div#errorMessage{
     background: #fff;
     text-align:center;
@@ -117,7 +120,60 @@ form.appForm{
 form.appFormInput{
     width:100%;
     
+}*/
+
+
+
+.appForm {
+    max-width: 400px;
+    margin: 0 auto;
 }
+
+.appForm div {
+    margin-bottom: 10px;
+}
+
+.appForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.appForm input[type="text"],
+.appForm input[type="email"],
+.appForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.appForm button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appForm button:hover {
+    background-color: #0056b3;
+}
+
+.responseMessage {
+    margin-top: 10px;
+}
+
+.responseMessage__success {
+    color: #008000;
+}
+
+.responseMessage__error {
+    color: #ff0000;
+}
+
 
 
 
@@ -137,4 +193,16 @@ p.responseMessage__error{
 p.responseMessage__success{
     background: rgba(0, 128, 0, 0.1);
     
+}
+ul.dashboard_menu_lists li.limainmenu ul.submenus li.submenulink  a{
+    padding-left: 25px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-transform: none !important;
+
+}
+.submenus{
+    background-color: #c26a80;
+
+
 }

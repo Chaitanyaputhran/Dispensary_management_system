@@ -52,8 +52,12 @@ $user = ($_SESSION['user']);
                             <input type="text" id="updated_at" name="updated_at" value="<?php echo date('Y-m-d H:i:s'); ?>" readonly/>
                         </div>
                         <div>--->
+
+
+
+                        
                            
-                            <button type="submit"><i class="fa fa-send"></i>Add User</button>
+                           <center> <button type="submit"><i class="fa fa-send"></i>Add User</button></center>
                           
                       
                     </form>
