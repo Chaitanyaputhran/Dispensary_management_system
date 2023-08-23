@@ -26,3 +26,16 @@ togglebutton.addEventListener('click',(event) =>{
     }
     
 });
+//add event to ahow/hide function.
+document.addEventListener('click', function(e){
+    let clickedEl = e.target;
+
+    if(clickedEl.classList.contains('limainmenu_link')){
+        alert('main menu');
+    }
+    console.log(clickedEl);
+
+
+});
+
+console.log(document.querySelectorAll('.limainmenu_link'));

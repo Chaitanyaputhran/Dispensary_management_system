@@ -17,11 +17,11 @@
                     <li class="limainmenu">
                         <a href="#"><i class="fa fa-dashboard "></i><span class="menutext">Staff</span></a>
                     </li>
-                    <li class="limainmenu">
+                    <li class="limainmenu showhidesubmenu">
                         <a href="javascript:void(0);" class="limainmenu_link">
-                            <i class="fa fa-user-plus "></i>
-                            <span class="menutext"> user</span>
-                            <i class="fa fa-angle-down maimmenuarrowicon"></i>
+                            <i class="fa fa-user-plus showhidesubmenu"></i>
+                            <span class="menutext showhidesubmenu"> user</span>
+                            <i class="fa fa-angle-down maimmenuarrowicon showhidesubmenu"></i>
                     </a>
                         <ul class ="submenus">
                             <li class="submenulink" style="
