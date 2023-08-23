@@ -13,6 +13,11 @@
                     </li>
                     <li>
                         <a href="./user_add.php"><i class="fa fa-user-plus "></i><span class="menutext">Add user</span></a>
+                        <ul>
+                            <li>Nav 1</li>
+                            <li>Nav 2</li>
+                            <li>Nav 3</li>
+
                     </li>
                     <li>
                         <a href="./user_add.php"><i class="fa fa-dashboard "></i><span class="menutext">Add user</span></a>
