@@ -18,10 +18,10 @@
                         <a href="#"><i class="fa fa-dashboard "></i><span class="menutext">Staff</span></a>
                     </li>
                     <li class="limainmenu">
-                        <a href="./user_add.php">
+                        <a href="javascript:void(0);" class="limainmenu_link">
                             <i class="fa fa-user-plus "></i>
                             <span class="menutext"> user</span>
-                            <i class="fa fa-angle-up "></i>
+                            <i class="fa fa-angle-down maimmenuarrowicon"></i>
                     </a>
                         <ul class ="submenus">
                             <li class="submenulink" style="

@@ -63,11 +63,13 @@ ul.dashboard_menu_lists li.limainmenu  a{
     font-size:20px;
     padding:0px 15px;
     padding-bottom:15px;
+    padding-right:0px;
 
 
 }
 ul.dashboard_menu_lists li.limainmenu  a i{
-    font-size:25px;
+    font-size:23px;
+    width:30px;
 }
 ul.dashboard_menu_lists li.limainmenu.menuactive{
     background: #f685a1;
@@ -203,6 +205,13 @@ ul.dashboard_menu_lists li.limainmenu ul.submenus li.submenulink  a{
 }
 .submenus{
     background-color: #c26a80;
+    display:none;
 
+
+}
+i.maimmenuarrowicon{
+    float:right;
+    font-size:19px !important;
+    margin-top:7px;
 
 }
