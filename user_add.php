@@ -14,7 +14,7 @@ $user = ($_SESSION['user']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="css/dasboard.css">
+    <link rel="stylesheet" href="css/dasboard.css?v=< ? =time(); ? >">
     <script src="https://use.fontawesome.com/0c7a3095b5.js"></script>
 </head>
 <body>
@@ -79,7 +79,7 @@ $user = ($_SESSION['user']);
             </div>
         </div>
     </div>
-    <script src="js/dashboard.js" >
+    <script src="js/dashboard.js?v=< ? =time(); ? >" >
    
 </script>
     

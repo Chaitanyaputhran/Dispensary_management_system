@@ -47,7 +47,7 @@
             if (targetMenu != undefined) {
                 let submenu = document.getElementById(targetMenu);
                 if (submenu) {
-                    submenu.style.height = '100%';
+                    submenu.style.display = 'block';
                 }
             }
         }
