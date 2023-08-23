@@ -1,7 +1,7 @@
 .container{
     background-image: url('../images/dispensary.jpg');
     background-size: cover;
-    height:300px;
+    height:1000px;
 }
 .error{
     background: #fff;
@@ -11,4 +11,7 @@
     padding:11px;
 
 
+}
+h1{
+    font-size: 100px;
 }

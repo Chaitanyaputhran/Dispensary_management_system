@@ -13,6 +13,11 @@ $user = ($_SESSION['user']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <?php
+header('Cache-Control: no-cache, no-store, must-revalidate');
+header('Pragma: no-cache');
+header('Expires: 0');
+?>
     <link rel="stylesheet" href="css/dasboard.css">
     <script src="https://use.fontawesome.com/0c7a3095b5.js"></script>
 </head>
