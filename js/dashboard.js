@@ -45,8 +45,16 @@
 
             let submenu = clickedEl.closest('li').querySelector('.submenus');
             let mainmenuicon = clickedEl.closest('li').querySelector('.maimmenuarrowicon');
+            //close all submenus.
 
-            console.log(mainmenuicon);
+
+            let submenus = document.querySelectorAll('.submenus');
+            submenus.forEach((sub) => {
+                if(submenu !== sub) sub.style.display='none';
+            });
+
+
+            
 
             if (submenu != null) {
                 
