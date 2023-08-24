@@ -43,8 +43,8 @@
 
         if (clickedEl.classList.contains('showhidesubmenu')) {
 
-            let submenu = clickedEl.closest('li').querSelector('.submenus');
-            
+            let submenu = clickedEl.closest('li').querySelector('.submenus');
+
             if (submenu != null) {
                 
                
