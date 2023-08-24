@@ -73,3 +73,20 @@
             }
         }
     });
+
+    //Add /hide active class to menu
+
+    //get current page
+    //use selecter to get the current or submenu
+    //add the active class
+    let pathArray = window.location.pathname.split('/');
+    let curFile = pathArray[pathArray.length-1];
+
+    let curNav = document.querySelector('a[href="./' + curFile +'"]');
+
+    let mainnav = curNav.closest('li.limainmenu');
+
+    mainnav.style.background= '#f685a1';
+
+    
+    console.log(mainnav);
