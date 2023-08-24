@@ -44,12 +44,23 @@
         if (clickedEl.classList.contains('showhidesubmenu')) {
 
             let submenu = clickedEl.closest('li').querySelector('.submenus');
+            let mainmenuicon = clickedEl.closest('li').querySelector('.maimmenuarrowicon');
+
+            console.log(mainmenuicon);
 
             if (submenu != null) {
                 
                
-                if(submenu.style.display === 'block') submenu.style.display = 'none';
-                else submenu.style.display = 'block';
+                if(submenu.style.display === 'block') 
+                {
+                    submenu.style.display = 'none';
+                    mainmenuicon.classList.remove('fa-angle-up');
+                    mainmenuicon.classList.add('fa-angle-down');
+            } else {
+                submenu.style.display = 'block';
+                mainmenuicon.classList.remove('fa-angle-down');
+                mainmenuicon.classList.add('fa-angle-up');
+        }
                
             }
         }
