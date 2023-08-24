@@ -42,11 +42,12 @@
         let clickedEl = e.target;
 
         if (clickedEl.classList.contains('showhidesubmenu')) {
-            let targetMenu = clickedEl.dataset.submenu;
 
-            if (targetMenu != undefined) {
+            let submenu = clickedEl.closest('li').querSelector('.submenus');
+            
+            if (submenu != null) {
                 
-                let submenu = document.getElementById(targetMenu);
+               
                 if(submenu.style.display === 'block') submenu.style.display = 'none';
                 else submenu.style.display = 'block';
                
