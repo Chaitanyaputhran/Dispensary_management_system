@@ -14,10 +14,32 @@
                     </a>
                 </li>
                 <li class="limainmenu">
-                    <a href="#">
-                        <i class="fa fa-dashboard "></i>
-                        <span class="menutext">Stock</span>
+                    
+                <a href="javascript:void(0);" class="showhidesubmenu" >
+                        <i class="fa fa-truck showhidesubmenu" ></i>
+                        <span class="menutext showhidesubmenu" > Stock</span>
+                        <i class="fa fa-angle-down maimmenuarrowicon showhidesubmenu" ></i>
                     </a>
+                    <ul class="submenus" >
+                    <li class="submenulink" style="
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-transform: none !important;">
+                            <a href="">
+                                <i class="fa fa-circle-o" style="font-size:16px; width:16px;"></i>
+                                <span class="menutext"> View Stock</span>
+                            </a>
+                        </li>
+                        <li class="submenulink" style="
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-transform: none !important;">
+                            <a href="">
+                                <i class="fa fa-circle-o" style="font-size:16px;  width:16px;"></i>
+                                <span class="menutext"> Add item</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="limainmenu">
                 
