@@ -205,7 +205,7 @@ ul.dashboard_menu_lists li.limainmenu ul.submenus li.submenulink  a{
 }
 .submenus{
     background-color: #c26a80;
-    display:block;
+    display:none;
 
 
 }

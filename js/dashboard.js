@@ -45,10 +45,8 @@
             let targetMenu = clickedEl.dataset.submenu;
 
             if (targetMenu != undefined) {
-                let submenu = document.getElementById(targetMenu);
-                if (submenu) {
-                    submenu.style.display = 'block';
-                }
+                let submenu = document.getElementById(targetMenu).style.display = 'block%';
+               
             }
         }
     });
