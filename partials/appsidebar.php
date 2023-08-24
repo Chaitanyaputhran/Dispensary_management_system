@@ -25,13 +25,13 @@
                         <span class="menutext">Staff</span>
                     </a>
                 </li>
-                <li class="limainmenu showhidesubmenu" data-submenu="user">
-                    <a href="javascript:void(0);" class="showhidesubmenu" data-submenu="user">
-                        <i class="fa fa-user-plus showhidesubmenu" data-submenu="user"></i>
-                        <span class="menutext showhidesubmenu" data-submenu="user"> user</span>
-                        <i class="fa fa-angle-down maimmenuarrowicon showhidesubmenu" data-submenu="user"></i>
+                <li class="limainmenu showhidesubmenu" >
+                    <a href="javascript:void(0);" class="showhidesubmenu" >
+                        <i class="fa fa-user-plus showhidesubmenu" ></i>
+                        <span class="menutext showhidesubmenu" > user</span>
+                        <i class="fa fa-angle-down maimmenuarrowicon showhidesubmenu" ></i>
                     </a>
-                    <ul class="submenus" id="user">
+                    <ul class="submenus" >
                     <li class="submenulink" style="
     padding-top: 10px !important;
     padding-bottom: 10px !important;
