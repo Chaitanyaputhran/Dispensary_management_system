@@ -1,106 +1,86 @@
+// Improved code for sidebar toggle and submenu behavior
 
+var sideBarIsOpen = true;
+var toggleButton = document.getElementById('togglebutton');
 
+toggleButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    var dashboardSidebar = document.getElementById('dashboard_sidebar');
+    var dashboardContentContainer = document.getElementById('dashboard_content_container');
+    var dashboardLogo = document.getElementById('dashboard_logo');
+    var userImage = document.getElementById('userimage');
+    var menuIcons = document.getElementsByClassName('menutext');
 
-    var sideBarIsOpen = true;
-    var togglebutton = document.getElementById('togglebutton');
-    togglebutton.addEventListener('click', (event) => {
-        event.preventDefault();
-        var dashboard_sidebar = document.getElementById('dashboard_sidebar');
-        var dashboard_content_container = document.getElementById('dashboard_content_container');
-        var dashboard_logo = document.getElementById('dashboard_logo');
-        var userimage = document.getElementById('userimage');
-        var menuicons = document.getElementsByClassName('menutext');
+    if (sideBarIsOpen) {
+        dashboardSidebar.style.width = '10%';
+        dashboardContentContainer.style.width = '90%';
+        dashboardLogo.style.fontSize = '60px';
+        userImage.style.width = '60px';
 
-        if (sideBarIsOpen) {
-            dashboard_sidebar.style.width = '10%';
-            dashboard_content_container.style.width = '90%';
-            dashboard_logo.style.fontSize = '60px';
-            userimage.style.width = '60px';
-
-            for (let i = 0; i < menuicons.length; i++) {
-                menuicons[i].style.display = 'none';
-            }
-
-            document.querySelector('.dashboard_menu_lists').style.textAlign = 'center';
-            sideBarIsOpen = false;
-        } else {
-            dashboard_sidebar.style.width = '20%';
-            dashboard_content_container.style.width = '80%';
-            dashboard_logo.style.fontSize = '80px';
-            userimage.style.width = '80px';
-
-            for (let i = 0; i < menuicons.length; i++) {
-                menuicons[i].style.display = 'inline-block';
-            }
-
-            document.querySelector('.dashboard_menu_lists').style.textAlign = 'left';
-            sideBarIsOpen = true;
+        for (let i = 0; i < menuIcons.length; i++) {
+            menuIcons[i].style.display = 'none';
         }
-    });
-    
-    document.addEventListener('click', function(e) {
-        let clickedEl = e.target;
 
-        if (clickedEl.classList.contains('showhidesubmenu')) {
+        document.querySelector('.dashboard_menu_lists').style.textAlign = 'center';
+        sideBarIsOpen = false;
+    } else {
+        dashboardSidebar.style.width = '20%';
+        dashboardContentContainer.style.width = '80%';
+        dashboardLogo.style.fontSize = '80px';
+        userImage.style.width = '80px';
 
-            let submenu = clickedEl.closest('li').querySelector('.submenus');
-            let mainmenuicon = clickedEl.closest('li').querySelector('.maimmenuarrowicon');
-            //close all submenus.
+        for (let i = 0; i < menuIcons.length; i++) {
+            menuIcons[i].style.display = 'inline-block';
+        }
 
+        document.querySelector('.dashboard_menu_lists').style.textAlign = 'left';
+        sideBarIsOpen = true;
+    }
+});
 
-            let submenus = document.querySelectorAll('.submenus');
-            submenus.forEach((sub) => {
-                if(submenu !== sub) sub.style.display='none';
-            });
+document.addEventListener('click', function(e) {
+    let clickedEl = e.target;
 
-// call function to hide/show submenu,
-showHideSubMebu();
-            
+    if (clickedEl.classList.contains('showhidesubmenu')) {
+        let submenu = clickedEl.closest('li').querySelector('.submenus');
+        let mainmenuicon = clickedEl.closest('li').querySelector('.maimmenuarrowicon');
+        let submenus = document.querySelectorAll('.submenus');
 
-            if (submenu != null) {
-                
-               
-                if(submenu.style.display === 'block') 
-                {
-                    submenu.style.display = 'none';
-                    mainmenuicon.classList.remove('fa-angle-up');
-                    mainmenuicon.classList.add('fa-angle-down');
+        submenus.forEach(function(sub) {
+            if (submenu !== sub) {
+                sub.style.display = 'none';
+                let otherMenuIcon = sub.closest('li').querySelector('.maimmenuarrowicon');
+                otherMenuIcon.classList.remove('fa-angle-up');
+                otherMenuIcon.classList.add('fa-angle-down');
+            }
+        });
+
+        if (submenu != null) {
+            if (submenu.style.display === 'block') {
+                submenu.style.display = 'none';
+                mainmenuicon.classList.remove('fa-angle-up');
+                mainmenuicon.classList.add('fa-angle-down');
             } else {
                 submenu.style.display = 'block';
                 mainmenuicon.classList.remove('fa-angle-down');
                 mainmenuicon.classList.add('fa-angle-up');
-        }
-               
             }
         }
-    });
-    function showhidesubmenu(){
+    }
+});
 
- 
 
-    //Add /hide active class to menu
 
-    //get current page
-    //use selecter to get the current or submenu
-    //add the active class
+
+function setActiveMenu() {
     let pathArray = window.location.pathname.split('/');
-    let curFile = pathArray[pathArray.length-1];
+    let curFile = pathArray[pathArray.length - 1];
 
-    let curNav = document.querySelector('a[href="./' + curFile +'"]');
-
+    let curNav = document.querySelector('a[href="./' + curFile + '"]');
     let mainnav = curNav.closest('li.limainmenu');
 
-    mainnav.style.background= '#f685a1';
+    mainnav.style.background = '#f685a1';
+}
 
-    let submenu = curNav.closest ('.submenus');
-    let mainmenuicon = clickedEl.closest('li').querySelector('.maimmenuarrowicon');
-    console.log(submenu)
-
-//Call fuction to hide/show submenu.
-
-
-
-showhidesubmenu(submenu,mainmenuicon);
-    console.log(mainnav);
-
-    }
+// Call the setActiveMenu function when the page loads
+document.addEventListener('DOMContentLoaded', setActiveMenu);

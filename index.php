@@ -26,7 +26,7 @@ header('Expires: 0');
             <h1>DMS</h1>
             <p>DISPENSARY MANAGEMENT SYSTEM</p>
         </div class = bannertagline>
-        <P>HI HELLO HOW ARE YOU ARE YOU FINE</P>
+        <p>HI HELLO HOW ARE YOU ARE YOU FINE</p>
 
     </div>
 

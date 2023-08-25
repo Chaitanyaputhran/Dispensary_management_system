@@ -32,16 +32,17 @@ body{
 }
 .bannerheader h1{
     font-size :100px;
-    color:rgb(33, 33, 33);
+    color:aliceblue;
     line-height: 100%;
 
 }
 .bannerheader p{
     font-size: 40px;
-    color:rgb(49, 49, 50);
+    
     text-transform:uppercase;
     margin-top:-30px;
     line-height: 100%;
+    color:aliceblue;
 
 
 
@@ -50,6 +51,6 @@ body{
     margin-top:20px;
 
     font-size: 25px;
-    color:aliceblue;
-    color:blue;
+   color: aqua;
+   
 }

@@ -25,7 +25,7 @@
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     text-transform: none !important;">
-                            <a href="">
+                            <a href="./stocks.php">
                                 <i class="fa fa-circle-o" style="font-size:16px; width:16px;"></i>
                                 <span class="menutext"> View Stock</span>
                             </a>
@@ -70,31 +70,12 @@
                     </ul>
                 </li>
                 <li class="limainmenu showhidesubmenu" >
-                    <a href="javascript:void(0);" class="showhidesubmenu" >
+                    <a href="./user_add.php" class="showhidesubmenu" >
                         <i class="fa fa-user-plus showhidesubmenu" ></i>
-                        <span class="menutext showhidesubmenu" > user</span>
-                        <i class="fa fa-angle-down maimmenuarrowicon showhidesubmenu" ></i>
+                        <span class="menutext showhidesubmenu" >Add user</span>
+                        
                     </a>
-                    <ul class="submenus" >
-                    <li class="submenulink" style="
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    text-transform: none !important;">
-                            <a href="#">
-                                <i class="fa fa-circle-o" style="font-size:16px; width:16px;"></i>
-                                <span class="menutext"> View user</span>
-                            </a>
-                        </li>
-                        <li class="submenulink" style="
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    text-transform: none !important;">
-                            <a href="./user_add.php">
-                                <i class="fa fa-circle-o" style="font-size:16px;  width:16px;"></i>
-                                <span class="menutext"> Add user</span>
-                            </a>
-                        </li>
-                    </ul>
+                   
                 </li>
             </ul>
         </div>

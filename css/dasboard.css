@@ -215,3 +215,37 @@ i.maimmenuarrowicon{
     margin-top:7px;
 
 }
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+}
+
+.product-image {
+    text-align: center;
+    width: 100px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    margin-top: 10px;
+}
+
+.product-details h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.product-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555555;
+}
