@@ -33,7 +33,7 @@ $stocks = $result->fetchAll(PDO::FETCH_ASSOC);
         <div class="dashboard_content_container" id="dashboard_content_container">
             <?php include('partials/apptopnav.php')?>
             <div class="dashboard_content">
-                <div class="dashboard_content_main">
+                <div class="dashboard_content_main product-grid">
                     <?php foreach ($stocks as $stock) : ?>
                         <div class="product-card">
                             <div class="product-image">

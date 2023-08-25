@@ -10,12 +10,20 @@ body{
     width:20%;
     background: #323232;
     height:100vh;
+    position:fixed;
 
 }
 .dashboard_content_container{
-    width:100%;
+    width:1160px;
     background:#f4f6f9 ;
+    margin-left: 20%;
+    padding:0px;
+  
     
+}
+.dashboard_content{
+    padding:0px;
+    margin-top: 30px;
 }
 h3.dashboard_logo{
     color:#f685a1;
@@ -84,6 +92,10 @@ ul.dashboard_menu_lists li.limainmenu:hover{
 .dashboard_content_topNav{
     background: #b1b0b0;
     padding:20px;
+    width:1160px;
+    margin-left:5px;
+    
+    position: fixed;
 
 
 }
@@ -215,24 +227,34 @@ i.maimmenuarrowicon{
     margin-top:7px;
 
 }
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px; /* Add some gap between product cards */
+}
 .product-card {
     background-color: #ffffff;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #1c1a1a;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px;
-    width: 100px;
+    width:130px;
+    height:200px;
+   
 }
 
 .product-image {
     text-align: center;
     width: 100px;
+    align-self: center;
 }
 
 .product-image img {
     max-width: 100%;
     height: auto;
+    margin-left:10px;
 }
 
 .product-details {
