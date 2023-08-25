@@ -10,7 +10,7 @@ require_once './database/connection.php'; // Include your database connection
 $user = $_SESSION['user'];
 
 // Fetch stock details including related medicine name
-$query = "SELECT s.stock_id, s.quantity, s.medicine_id, s.expiry, m.medicine_name,s.image_path
+$query = "SELECT s.stock_id, s.quantity, s.medicine_id, s.expiry, m.medicine_name,m.image_path
           FROM stocks s
           INNER JOIN medicines m ON s.medicine_id = m.medicine_id";
 $result = $conn->query($query);

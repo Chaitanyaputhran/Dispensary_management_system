@@ -34,7 +34,7 @@
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     text-transform: none !important;">
-                            <a href="">
+                            <a href="./add_stock.php">
                                 <i class="fa fa-circle-o" style="font-size:16px;  width:16px;"></i>
                                 <span class="menutext"> Add item</span>
                             </a>
