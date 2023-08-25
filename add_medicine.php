@@ -20,6 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $insertQuery = "INSERT INTO medicines (medicine_name, image_path) VALUES (?, ?)";
     $stmt = $conn->prepare($insertQuery);
     $stmt->execute([$medicine_name, $image_path]);
+    
+    $message = 'New medicine added successfully!';
 
     // Redirect to the dashboard or a success page
     header('location: dashboard.php');
