@@ -41,7 +41,7 @@ $stocks = $result->fetchAll(PDO::FETCH_ASSOC);
                             </div>
                             <div class="product-details">
                                 <h2><?= $stock['medicine_name'] ?></h2>
-                                <p>Stock ID: <?= $stock['stock_id'] ?></p>
+    
                                 <p>Quantity: <?= $stock['quantity'] ?></p>
                                 <p>Expiry: <?= $stock['expiry'] ?></p>
                             </div>
