@@ -40,10 +40,10 @@ $stocks = $result->fetchAll(PDO::FETCH_ASSOC);
                                 <img src="<?= $stock['image_path'] ?>" alt="Stock Image">
                             </div>
                             <div class="product-details">
-                                <h2><?= $stock['medicine_name'] ?></h2>
+                               <center> <h2><?= $stock['medicine_name'] ?></h2>
     
                                 <p>Quantity: <?= $stock['quantity'] ?></p>
-                                <p>Expiry: <?= $stock['expiry'] ?></p>
+                                <p>Expiry: <?= $stock['expiry'] ?></p></center>
                             </div>
                         </div>
                     <?php endforeach; ?>

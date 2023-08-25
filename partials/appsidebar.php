@@ -53,7 +53,7 @@
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     text-transform: none !important;">
-                            <a href="">
+                            <a href="./order.php">
                                 <i class="fa fa-circle-o" style="font-size:16px; width:16px;"></i>
                                 <span class="menutext"> View staff</span>
                             </a>

@@ -26,6 +26,11 @@ $user = ($_SESSION['user']);
            
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
+                    <div class="useradd">
+</br>
+</br>
+</br>
+                       <center> <h1 style="font-size:16px">Add User</h1></center>
                 <form action="database/add.php" method="POST" class="appForm">
                         <div>
                             <label for="firstname">First Name</label>
@@ -61,6 +66,7 @@ $user = ($_SESSION['user']);
                           
                       
                     </form>
+</div>
                     <?php if(isset($_SESSION['response'])) {
                         $response_message= $_SESSION['response']['message'];
                         $is_success= $_SESSION['response']['success'];
