@@ -53,7 +53,8 @@
                 if(submenu !== sub) sub.style.display='none';
             });
 
-
+// call function to hide/show submenu,
+showHideSubMebu();
             
 
             if (submenu != null) {
@@ -73,6 +74,9 @@
             }
         }
     });
+    function showhidesubmenu(){
+
+ 
 
     //Add /hide active class to menu
 
@@ -88,5 +92,15 @@
 
     mainnav.style.background= '#f685a1';
 
-    
+    let submenu = curNav.closest ('.submenus');
+    let mainmenuicon = clickedEl.closest('li').querySelector('.maimmenuarrowicon');
+    console.log(submenu)
+
+//Call fuction to hide/show submenu.
+
+
+
+showhidesubmenu(submenu,mainmenuicon);
     console.log(mainnav);
+
+    }
