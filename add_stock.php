@@ -48,7 +48,9 @@ $medicines = $medicineResult->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <style>
         form {
-    margin-top: 20px;
+    margin-top: 50px;
+    align-items: center;
+    margin-left:160px;
 }
 
 label {
@@ -75,30 +77,67 @@ button[type="submit"] {
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    margin-left:90px;
 }
 .content{
-    margin-top:100px;
+    margin-top:40px;
     margin-left:250px;
     width:600px;
     height:500px;
     border:2px black solid;
     border-radius:30px;
+     line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  align-items: center;
+  
     
+}
+input[type="number"],
+input[type="text"],
+select {
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s, background-color 0.3s;
+    background-color:pink;
+}
+
+
+select option:hover {
+    background-color: #f0f0f0;
 }
 
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-a {
+
+
+/* Add this CSS to your dashboard.css file */
+
+/* Style for button */
+.button {
+    margin-left:1000px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
     text-decoration: none;
-    color: #007bff;
-    transition: color 0.3s ease-in-out;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-a:hover {
-    color: #0056b3;
+.button:hover {
+    background-color: #0056b3;
 }
+
 </style>
     <div class="dashboardMainContainer" id="dashboardMainContainer">
         <?php include('partials/appsidebar.php')?>
@@ -106,8 +145,10 @@ a:hover {
             <?php include('partials/apptopnav.php')?>
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
+                <a href="./add_medicine.php" class="button">Add Medicines</a>
+
                     <div class="content">
-                    <h2>Add Item to Stocks</h2>
+                    <center><h2>Add Item to Stocks</h2></center>
                     <form action="" method="post">
                         <label for="medicine_id">Medicine:</label>
                         <select name="medicine_id" id="medicine_id">
@@ -119,11 +160,14 @@ a:hover {
                         <input type="number" name="quantity" id="quantity" required><br>
                         <label for="expiry">Expiry:</label>
                         <input type="text" name="expiry" id="expiry" required><br>
-                        <button type="submit">Add to Stocks</button>
+                        <br>
+                        <br>
+
+                      <button type="submit">Add to Stocks</button>
                     </form>
                             </div>
                    
-<a href="another_page.php" class="nav-link">Go to Another Page</a>
+
                 </div>
             </div>
         </div>
