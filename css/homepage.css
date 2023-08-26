@@ -1,56 +1,59 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
-}.header{
-    width:100%;
-    background-color: blueviolet;
-    padding:10px 0px;
-    text-align: right;
-
-}
-.header a{
-    font-size: 20px;
-    color:white;
-    border:2px solid white;
-    padding:5px 10px;
-    text-decoration:none ;
-    border-radius:5px;
-    margin-right:50px;
-   
-
-}
-.banner{
-    background-image: url('../images/download.jpg');
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply styles to the header */
+  .header {
+    background-color: #8B4513; /* Brown color */
+    color: #101010;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+  }
+  
+  .login-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style the banner */
+  .banner {
+    background-image: url('/images/pic2.jpg.jpg');
     background-size: cover;
-    padding-top:100px;
-    padding-bottom: 100px;
-}
-.homepagecontainer{
-    width:100%;
-    max-width:900px;
-    margin:0 auto;
-    height:50vh;
-}
-.bannerheader h1{
-    font-size :100px;
-    color:aliceblue;
-    line-height: 100%;
-
-}
-.bannerheader p{
-    font-size: 40px;
-    
-    text-transform:uppercase;
-    margin-top:-30px;
-    line-height: 100%;
-    color:aliceblue;
-
-
-
-}
-.bannertagline p{
-    margin-top:20px;
-
-    font-size: 25px;
-   color: aqua;
-   
-}
+    color: #fbf4ff;
+    padding: 150px 0;
+    text-align: center;
+  }
+  
+  .homepagecontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .bannerheader h1 {
+    font-size: 4em; /* Increased font size */
+    margin-bottom: 20px;
+  }
+  
+  .bannerheader p {
+    font-size: 2em; /* Increased font size */
+    margin-bottom: 40px;
+  }
+  
+  .bannertagline {
+    font-size: 1.4em; /* Increased font size */
+    color: #36330c; /* Gold color */
+    font-weight: bold; /* Added font weight */
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #8B4513; /* Brown color */
+    color: #564c13;
+    text-align: center;
+    padding: 10px 0;
+  }

@@ -153,13 +153,12 @@ form.appFormInput{
     margin-bottom: 5px;
 }
 
-.appForm input[type="text"],
-.appForm input[type="email"],
-.appForm input[type="password"] {
+.appForm input[type="text"], .appForm input[type="email"], .appForm input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: pink;
 }
 
 .appForm button {
@@ -232,7 +231,7 @@ i.maimmenuarrowicon{
     height:500px;
     border-radius:30px;
     border:2px black solid;
-    margin-left:200px;
+    margin-left:400px;
 }
 .product-grid {
     display: flex; /* Use flexbox to create a flexible container */

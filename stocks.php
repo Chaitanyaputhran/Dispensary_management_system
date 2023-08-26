@@ -15,6 +15,8 @@ $query = "SELECT s.stock_id, s.quantity, s.medicine_id, s.expiry, m.medicine_nam
           INNER JOIN medicines m ON s.medicine_id = m.medicine_id";
 $result = $conn->query($query);
 $stocks = $result->fetchAll(PDO::FETCH_ASSOC);
+
+
 ?>
 
 <!DOCTYPE html>

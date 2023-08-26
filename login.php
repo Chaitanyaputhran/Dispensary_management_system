@@ -1,7 +1,7 @@
 <?php
 //Start the session
 session_start();
-if(isset($_SESSION['user'])) header('location:dashboard.php');
+if(isset($_SESSION['user'])) header('location:order.php');
  $error_message='';
 if($_POST){
 
@@ -29,66 +29,36 @@ if($_POST){
    
 }
 
-
-
 ?>
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dispensary Management System</title>
-    <?php
-header('Cache-Control: no-cache, no-store, must-revalidate');
-header('Pragma: no-cache');
-header('Expires: 0');
-?>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-
+  <title>Dispensary Management System</title>
+  <link rel="stylesheet" href="./css/login.css">
 </head>
-<body >
-    <?php
-    if(!empty($error_message)){
-
-    
-
-?>
- 
-    <div class =error>
-       <strong>Error:</strong>  <p><?= $error_message ?></p>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Dispensary Management System</h1>
     </div>
-    <?php } ?>
-    <div class="container">
-        <div class ="top">
-            <h1>DMS</h1>
-            <H2>DISPENSARY MANAGEMENT SYSTEM</H2>
+    <div class="main">
+      <form action="/login" method="post">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username">
         </div>
-        <div class="body">
-            <form action="login.php" method="POST">
-                <div>
-                    <label for ="">Username</label>
-                    <input type="text" name="username" placeholder="username" />
-                    </div>
-                    <div>
-                        <label for ="">Password</label>
-                        <input type="password" name="password" placeholder="password" />
-
-                    </div>
-                    <div>
-                        <button>login</button>
-                    </div>
-                </div>
-            </form>
-
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
         </div>
-
+        <div>
+          <center><input type="submit" value="Login"></center>
+        </div>
+      </form>
     </div>
+    <div class="footer">
+      <p>Copyright 2023 Dispensary Management System</p>
+    </div>
+  </div>
 </body>
 </html>
