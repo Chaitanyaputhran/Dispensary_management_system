@@ -237,6 +237,7 @@ i.maimmenuarrowicon{
     display: flex; /* Use flexbox to create a flexible container */
     flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
     justify-content: space-between; 
+    gap:10px;
    /* Distribute space between cards */
 }
 .product-card {
@@ -247,7 +248,7 @@ i.maimmenuarrowicon{
    
     margin: 20px;
     width: 130px;
-    height:210px;
+    height:220px;
    
 }
 

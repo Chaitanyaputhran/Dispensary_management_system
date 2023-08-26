@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
+  
   
   /* Apply styles to the header */
   .header {
@@ -21,11 +23,13 @@
   
   /* Style the banner */
   .banner {
-    background-image: url('/images/pic2.jpg.jpg');
+  
     background-size: cover;
-    color: #fbf4ff;
+    color: #aa59d8;
     padding: 150px 0;
     text-align: center;
+    
+   
   }
   
   .homepagecontainer {

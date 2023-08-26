@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = 'New staff added successfully!';
 
     // Redirect to the dashboard or a success page
-    header('location: dashboard.php');
+    header('location: order.php');
     exit;
 }
 ?>

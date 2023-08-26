@@ -1,64 +1,69 @@
 <?php
-//Start the session
 session_start();
-if(isset($_SESSION['user'])) header('location:order.php');
- $error_message='';
-if($_POST){
-
-    include('database/connection.php');
-   
-    $username=$_POST['username'];
-    $password=$_POST['password'];
-
-    $query ='SELECT * FROM users WHERE users.email="'. $username .'" AND users.password ="'. $password .'" ';
-    $stmt = $conn->prepare($query);
-    $stmt->execute();
-    if($stmt->rowCount() > 0){
-        $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        $user=$stmt->fetchAll()[0];
-        $_SESSION['user']=$user;
-
-        header('Location: dashboard.php');
-
-
-    }else $error_message='Please make sure that username and password are correct';
-
-    
-   
-
-   
+if (isset($_SESSION['user'])) {
+    header('Location: ./order.php');
+    exit();
 }
 
+$error_message = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    require_once './database/connection.php';
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $query = 'SELECT * FROM users WHERE email = :username AND password = :password';
+    $stmt = $conn->prepare($query);
+    $stmt->bindParam(':username', $username, PDO::PARAM_STR);
+    $stmt->bindParam(':password', $password, PDO::PARAM_STR);
+    $stmt->execute();
+
+    if ($stmt->rowCount() > 0) {
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        $_SESSION['user'] = $user;
+
+        header('Location: ./order.php');
+        exit();
+    } else {
+        $error_message = 'Please make sure that username and password are correct';
+    }
+}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dispensary Management System</title>
-  <link rel="stylesheet" href="./css/login.css">
+    <title>Dispensary Management System</title>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <div class="header">
-      <h1>Dispensary Management System</h1>
+        <h1>Dispensary Management System</h1>
     </div>
     <div class="main">
-      <form action="/login" method="post">
-        <div>
-          <label for="username">Username</label>
-          <input type="text" name="username" id="username">
-        </div>
-        <div>
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password">
-        </div>
-        <div>
-          <center><input type="submit" value="Login"></center>
-        </div>
-      </form>
+        <form action="" method="post">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <?php if (!empty($error_message)): ?>
+            <p><?php echo $error_message; ?></p>
+        <?php endif; ?>
     </div>
     <div class="footer">
-      <p>Copyright 2023 Dispensary Management System</p>
+        <p>Copyright 2023 Dispensary Management System</p>
     </div>
-  </div>
+</div>
+<script src="js/dashboard.js"></script>
 </body>
 </html>

@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // Fetch order details from the database
-$query = "SELECT * FROM order_supplier";
+$query = "SELECT os.*, m.medicine_name FROM order_supplier os JOIN medicines m ON os.medicine_id = m.medicine_id";
 $result = $conn->query($query);
 $orders = $result->fetchAll(PDO::FETCH_ASSOC);
 
@@ -139,7 +139,7 @@ if (isset($_POST['status'])) {
                     <thead>
                         <tr>
                             <th>Order ID</th>
-                            <th>Medicine ID</th>
+                            <th>Medicine name</th>
                             <th>Quantity Ordered</th>
                             <th>Quantity Remaining</th>
                             <th>Status</th>
@@ -171,7 +171,7 @@ if (isset($_POST['status'])) {
 
                             echo "<tr>
                                     <td>{$order['id']}</td>
-                                    <td>{$order['medicine_id']}</td>
+                                    <td>{$order['medicine_name']}</td>
                                     <td>{$order['quantity_ordered']}</td>
                                     <td>{$quantity_remaining}</td>
                                     <td>{$order['status']}</td>
