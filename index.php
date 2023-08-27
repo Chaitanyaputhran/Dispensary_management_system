@@ -42,14 +42,18 @@
             
             text-align: center;
         }
+        .faq{
+          width:100%;
+          margin-left: 0px;
+        }
         .cont{
             background-image:linear-gradient( hsl(240, 73%, 65%),hsl(273, 75%, 66%));
     width:900px;
     height:540px;
     background-color: white;
-    margin-left:330px;
+    margin-left:-400px;
     border-radius: 20px;
-    margin-top:40px;
+    margin-top:800px;
 }
 .first{
     width:380px;
@@ -64,9 +68,9 @@
     background-position-y: 70%;
     
 }
-.image {
+.image1 {
    
-    left: 15%;
+    left: -70%;
     top:900px;
    
     width:500px;
@@ -93,20 +97,20 @@
  .head{
     width:65px;
     height:50px;
-    left:840px;
+    left:75px;
     position:absolute;
-    top:850px;
+    top:890px;
  }
  .head h1{
     font-family: 'Kumbh Sans', sans-serif;
     font-size:35px;
  }
- .content{
+ .content1{
     width:400px;
     height:385px;
     position:absolute;
-    left:800px;
-    top:950px;
+    left:50px;
+    top:1000px;
     
 
  }
@@ -244,6 +248,7 @@
     color: #fff;
     padding: 20px 0;
     margin-top:70px;
+    margin-left:-1000px;
 }
 
 .container {
@@ -251,6 +256,8 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-left:500px;
+   
 }
 
 .contact-info, .social-media {
@@ -351,8 +358,11 @@
     line-height: 1.6;
     color: #555;
     width: 600px;
-    margin-left:400px;
+    margin-left:-1000px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.section-header{
+  margin-left:-100px;
 }
 #learn {
     background-color: #ff8000;
@@ -428,6 +438,166 @@
     font-size: 1.1rem;
     color: #555;
 }
+.mainu{
+    position:relative;
+    margin-left: 730px;
+    margin-bottom:0px;
+    margin-top: 25px;
+    height:700px;
+
+}
+
+.quotes{
+   
+     position: absolute;
+        top: 45%;
+        left:-49px;
+        transform: translate(-80%, -50%);
+  
+}
+.image-quote{
+    position: absolute;
+    left:14.5%;
+    top:10%;
+    border-radius: 0 ;
+    width:120px;
+    height:100px;
+    background-image: url('.\\images\\pattern-quotes.svg');
+    
+}
+
+.tanya{
+        height:440px;
+        width:440px;
+        position: absolute;
+        top: 51%;
+        left: 21%;
+        padding-bottom: 0;
+        border-radius: 10px;
+        margin-bottom: 0;;
+        transform: translate(-15%, -50%);
+        background-image:url('.\\images\\pharma.jpg')
+        
+  
+      
+}
+.image{
+    height:540px;
+    position: absolute;
+    top: 51%;
+    left: 21%;
+    padding-bottom: 0;
+    margin-bottom: 0;;
+    transform: translate(-15%, -50%);
+    
+
+  
+}
+.tanya img{
+    border-radius: 10px;
+
+}
+.john{
+    height:440px;
+    width:440px;
+    position: absolute;
+    top: 51%;
+    left: 21%;
+    padding-bottom: 0;
+    border-radius: 10px;
+    margin-bottom: 0;;
+    transform: translate(-15%, -50%);
+    background-image:url('.\\images\\pharma1.jpg')
+    
+    
+    
+    
+
+  
+}
+
+
+
+
+.content{
+    margin-top: 0px;
+    padding-top: -10px;
+    left:10%;
+    width:640px;
+}
+.content h3{
+    
+   padding-top: 70px;
+    font-family:'Inter', sans-serif;
+    font-size: 32px;
+    padding-left: 7px;
+    font-weight: 300, 500, 700;
+    color:hsl(240, 38%, 20%);
+    
+   
+
+}
+.content h4{
+    
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-top: 1px;
+   
+}
+.buttons{
+    width:70px;
+    height:35px;
+    margin-left:135px;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    transform: translate(-80%, -50%);
+    box-shadow: 0px 10px 5px rgb(103, 102, 102);
+    border-radius: 20px;
+
+    
+    
+}
+    
+.button{
+ 
+    
+    
+}
+.buttons .prev__button{
+    background-image: url('.\\images\\icon-prev.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 15%;
+    height:30px;
+    border:none;
+    width:32px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.buttons .next__button{
+    background-image: url('.\\images\\icon-next.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 15%;
+    height:30px;
+    border:none;
+    width:32px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+button :hover{
+    background-color: grey;
+}
+
+
 
 
 
@@ -455,6 +625,7 @@
     <section class="banner" id="banner">
         
     </section>
+    </section>
     <section class="about section" id="about">
     <div class="container">
         <h2  style=font-size:50px; class="section-header">About Us</h2>
@@ -464,41 +635,60 @@
        
     </div>
 </section>
+    <section class="mainu">
+        <img src ="..\images\pattern-bg.svg" alt="">
+       
+        <div class="tanya">
+         
+          <div class="buttons">
+          <button class="prev__button"></button>
+          <button class="next__button"></button>
+        </div>
+     
+          <div class =quotes>
+            <div class = image-quote></div>
+            <div class ="content">
+              <h3>"The dispensary became a haven of wellness, where expert guidance and natural remedies intertwine. A place where healing blossoms amidst knowledge and care."</h3>
+              <br>
+              <h4 style="color:hsl(240, 38%, 20%);display:inline;padding-left:10px;padding: right 0;">Tanya Sinclair </h4> <h4  style="color:hsl(240, 18%, 77%);display:inline;  padding-left:3px;"> Pharmacist</h4>
+                
+              
+            </div>
+          
+        </div>
+        
+        </div>
+        <div class="john">
+          <div class="buttons">
+          <button class="prev__button"></button>
+          <button class="next__button"></button>
+        </div>
+     
+          <div class =quotes>
+            <div class = image-quote></div>
+            <div class ="content">
+              <h3>"The pharmacist stands as a trusted guardian of health, bridging the gap between medicine and compassion."</h3>
+              <br>
+              <h4 style="color:hsl(240, 38%, 20%);display:inline;padding-left:10px;padding: right 0;">John Tarkpor </h4> <h4  style="color:hsl(240, 18%, 77%);display:inline;  padding-left:3px;">Pharmacist</h4>
+                
+              
+            </div>
+          
+        </div>
+        
+        </div>
+        
+       
+     
 
-<!---
-<section class="features section" id="features">
-    <div class="container">
-        <h2 class="section-header">Our Features</h2>
-        <div class="section-content">
-            <p>Explore our comprehensive features that help dispensaries streamline operations, manage inventory, and grow their business.</p>
-        </div>
-        <div class="features-list">
-            <div class="feature">
-                <div class="feature-image">
-                    <img src="./images/pharmacist.jpeg" alt="Feature 1">
-                </div>
-                <h3>Inventory Management</h3>
-                <p>Efficiently track and manage your dispensary's inventory with our advanced inventory management system.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-image">
-                    <img src="feature2.jpg" alt="Feature 2">
-                </div>
-                <h3>Customer Engagement</h3>
-                <p>Engage and communicate with your customers through personalized offers and promotions.</p>
-            </div>
-           
-        </div>
-    </div>
-</section>
--->
+
 
     <section class="faq" id="faq">
     <div class = "cont">
       <div class="head">
         <h1>FAQ</h1>
       </div>
-      <div class ="content">
+      <div class ="content1">
         <div class ="q1">
           <p >How many team members can I invite?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  <button  class="b1"></button></p>
           
@@ -548,7 +738,7 @@
         <div class ="background">
           
          
-          <div class ="image">
+          <div class ="image1">
             <img src =".\images\illustration-box-desktop.svg" alt="">
            
            
@@ -678,6 +868,31 @@ const change5 = () => {
 };
 
 button5.forEach((button) => button.addEventListener("click", change5));
+
+const john = document.querySelector(".john");
+const tanya = document.querySelector(".tanya");
+const prevButtons = document.querySelectorAll(".prev__button");
+const nextButtons = document.querySelectorAll(".next__button");
+
+
+john.classList.add("hide");
+
+
+const slideChange = () => {
+  if (john.classList.contains("hide")) {
+    john.classList.remove("hide");
+    tanya.classList.add("hide");
+  } else if (tanya.classList.contains("hide")) {
+    tanya.classList.remove("hide");
+    john.classList.add("hide");
+  } else {
+    john.classList.add("hide");
+  }
+};
+
+
+prevButtons.forEach((button) => button.addEventListener("click", slideChange));
+nextButtons.forEach((button) => button.addEventListener("click", slideChange));
     </script>
 </body>
 </html>
