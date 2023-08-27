@@ -39,9 +39,9 @@
 
    <script>
        const images = [
-           "./images/dispensary.jpg",
-           "./images/download.jpg",
-           "./images/pharm.jpeg"
+           "./images/med.jpg",
+           "./images/doctor.jpg",
+           "./images/pharmacy.jpg"
        ];
 
        const banner = document.querySelector(".banner");
