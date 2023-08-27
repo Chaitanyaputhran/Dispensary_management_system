@@ -13,7 +13,11 @@
             height: 300px; /* Full viewport height */
             background-size: cover;
             background-position: center;
-            transition: background-image 1s; /* Transition duration */
+            transition: background-image 1s; 
+            margin-top: 2px;/* Transition duration */
+            background-image: url( './images/m.jpg');
+       
+            
         }
 
         /* Additional styling */
@@ -311,17 +315,45 @@
     line-height: 1.6;
     color: #555;
 }
+/* Your existing styles here */
+
 .header {
- 
+    background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+   
+    width:100%;
+    
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    top:6px;
+    border-radius: 50px;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
 }
 
 .navigation {
     list-style: none;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation li {
@@ -342,11 +374,15 @@
 
 
 
+
     </style>
 </head>
 <body>
     <header class="header">
-        <nav>
+    <div class="heading">
+        <img src="./images/user/dms.jpg" alt="Logo" class="logo-icon">
+        <h1>DMS</h1>
+    </div>
         <nav>
         <ul class="navigation">
         <li><a href="#banner">Home</a></li>
@@ -360,13 +396,9 @@
            
       
     </header>
+
     <section class="banner" id="banner">
-        <div class="homepagecontainer">
-            <div class="bannerheader">
-                <h1>Dispensary Management System</h1>
-                
-            </div>
-        </div>
+        
     </section>
     <section class="about section" id="about">
     <div class="container">
