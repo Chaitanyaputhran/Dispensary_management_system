@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="password" name="password" id="password">
             </div>
             <div>
-                <input type="submit" value="Login">
+               <center> <input type="submit" value="Login"></center>
             </div>
         </form>
         <?php if (!empty($error_message)): ?>

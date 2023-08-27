@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = 'New medicine added successfully!';
 
     // Redirect to the dashboard or a success page
-    header('location: dashboard.php');
+    header('location: stocks.php');
     exit;
 }
 ?>

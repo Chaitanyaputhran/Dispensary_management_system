@@ -240,6 +240,25 @@ i.maimmenuarrowicon{
     gap:10px;
    /* Distribute space between cards */
 }
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product {
+    width: calc(33.33% - 10px); /* Adjust width based on design */
+    margin-bottom: 10px; /* Adjust the margin-bottom to reduce space between rows */
+    /* Other styling properties for your product items */
+}
+
+
+
+
+
+
+
 .product-card {
     background-color: #ffffff;
     border: 1px solid #1c1a1a;

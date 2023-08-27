@@ -49,6 +49,7 @@
     background-color: white;
     margin-left:330px;
     border-radius: 20px;
+    margin-top:40px;
 }
 .first{
     width:380px;
@@ -66,7 +67,7 @@
 .image {
    
     left: 15%;
-    top:950px;
+    top:900px;
    
     width:500px;
     height:359px;
@@ -94,7 +95,7 @@
     height:50px;
     left:840px;
     position:absolute;
-    top:1000px;
+    top:850px;
  }
  .head h1{
     font-family: 'Kumbh Sans', sans-serif;
@@ -105,7 +106,7 @@
     height:385px;
     position:absolute;
     left:800px;
-    top:1100px;
+    top:950px;
     
 
  }
@@ -367,8 +368,66 @@
 #learn:hover {
     background-color: pink; /* Change color on hover */
 }
+/* Your existing styles here */
+/* Your existing styles here */
 
+.features {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    text-align: center;
+}
 
+.features .section-header {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.features .section-content {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.feature {
+    width: calc(33.33% - 20px); /* Adjust width based on design */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature .feature-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.feature img {
+    max-width: 100px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    color: #555;
+}
 
 
 
@@ -384,8 +443,7 @@
         <ul class="navigation">
         <li><a href="#banner">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#features">Our Features</a></li>
-            <li><a href="#faq">Our Features</a></li>
+            <li><a href="#faq">FAQ</a></li>
       
             <a href="./login.php" class="login-link">Login</a>
         </ul>
@@ -407,15 +465,34 @@
     </div>
 </section>
 
-
-    <section class="features section" id="features">
-        <div class="container">
-            <h2 class="section-header">Our Features</h2>
-            <div class="section-content">
-                <p>Explore our comprehensive features that help dispensaries streamline operations, manage inventory, and grow their business.</p>
-            </div>
+<!---
+<section class="features section" id="features">
+    <div class="container">
+        <h2 class="section-header">Our Features</h2>
+        <div class="section-content">
+            <p>Explore our comprehensive features that help dispensaries streamline operations, manage inventory, and grow their business.</p>
         </div>
-    </section>
+        <div class="features-list">
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="./images/pharmacist.jpeg" alt="Feature 1">
+                </div>
+                <h3>Inventory Management</h3>
+                <p>Efficiently track and manage your dispensary's inventory with our advanced inventory management system.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="feature2.jpg" alt="Feature 2">
+                </div>
+                <h3>Customer Engagement</h3>
+                <p>Engage and communicate with your customers through personalized offers and promotions.</p>
+            </div>
+           
+        </div>
+    </div>
+</section>
+-->
+
     <section class="faq" id="faq">
     <div class = "cont">
       <div class="head">
