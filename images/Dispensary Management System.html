@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://localhost/dms/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispensary Management System</title>
+    <link rel="stylesheet" href="./Dispensary Management System_files/homepage.css">
+    <style>
+        /* Additional styles for changing images */
+        .banner {
+            position: relative;
+            overflow: hidden;
+            height: 300px; /* Full viewport height */
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s; /* Transition duration */
+        }
+
+        /* Additional styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-content {
+            
+            text-align: center;
+        }
+        .container{
+    width:900px;
+    height:540px;
+    background-color: white;
+    margin-left:330px;
+    border-radius: 20px;
+}
+.first{
+    width:380px;
+    height:540px;
+    
+}
+.background{
+    width:400px;
+    background-image: url('..\\images\\bg-pattern-desktop.svg');
+    height:540px;
+    background-position-x: right;
+    background-position-y: 70%;
+    
+}
+.image {
+   
+    left: 22.9%;
+    top:25%;
+   
+    width:400px;
+    height:359px;
+    z-index:1;
+    background-image: url('..\\images\\illustration-woman-online-desktop.svg');
+   
+    position: absolute;
+    background-position-x: right;
+    
+    background-repeat: no-repeat;
+  }
+ img{
+    
+    left:-90px;
+    position:relative;
+    top:130px;
+ }
+ .second{
+    width:900px;
+    height:540px;
+    left:380px;
+ }
+ .head{
+    width:65px;
+    height:50px;
+    left:840px;
+    position:absolute;
+    top:23%;
+ }
+ .head h1{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size:35px;
+ }
+ .content{
+    width:400px;
+    height:385px;
+    position:absolute;
+    left:800px;
+    top:39%;
+    
+
+ }
+ .q1{
+    padding-top: 0%;
+    left:40px;
+    position:absolute;
+  
+ }
+ .q1.active p {
+   color:hsl(237, 12%, 33%);
+   font-weight: bolder;
+   font-size: 14px;
+ }
+ .q2.active p {
+   color:hsl(237, 12%, 33%);
+   font-weight: bolder;
+   font-size: 14px;
+ }
+ .q3.active p {
+   color:hsl(237, 12%, 33%);
+   font-weight: bolder;
+   font-size: 14px;
+ }
+ .q4.active p {
+   color:hsl(237, 12%, 33%);
+   font-weight: bolder;
+   font-size: 14px;
+ }
+ .q5.active p {
+   color:hsl(237, 12%, 33%);
+   font-weight: bolder;
+   font-size: 14px;
+ }
+ p{
+    font-size: 14px;
+    font-weight:400, 700;
+    font-family: 'Kumbh Sans', sans-serif;
+    color:hsl(240, 6%, 50%);
+ }
+ p:hover{
+   color:hsl(14, 88%, 65%);
+   font-weight: bold;
+ }
+
+ .hide{
+   
+    display:none;
+ }
+ hr{
+    color: hsl(240, 5%, 91%);
+    width:320px;
+    margin-inline-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-start: 0%;
+ }
+ .q2{
+    padding-top: 0%;
+    left:40px;
+    position:relative;
+    top:50px;
+ }
+ .q3{
+   padding-top: 0%;
+   left:40px;
+   position:relative;
+   top:50px;
+}
+.q4{
+   padding-top: 0%;
+   left:40px;
+   position:relative;
+   top:50px;
+}
+.q5{
+   padding-top: 0%;
+   left:40px;
+   position:relative;
+   top:50px;
+}
+.b1{
+   height:8px;
+   width:10px;
+   display: inline-block;
+   background-image: url('..\\images\\icon-arrow-down.svg');
+   background-repeat: no-repeat;
+   border: 0px;
+  
+
+}
+
+ 
+.b2{
+   height:8px;
+   width:10px;
+   display: inline-block;
+   background-image: url('..\\images\\icon-arrow-down.svg');
+   background-repeat: no-repeat;
+   border: 0px;
+
+}
+.b3{
+   height:8px;
+   width:10px;
+   display: inline-block;
+   background-image: url('..\\images\\icon-arrow-down.svg');
+   background-repeat: no-repeat;
+   border: 0px;
+
+}
+.b4{
+   height:8px;
+   width:10px;
+   display: inline-block;
+   background-image: url('..\\images\\icon-arrow-down.svg');
+   background-repeat: no-repeat;
+   border: 0px;
+
+}
+.b5{
+   height:8px;
+   width:10px;
+   display: inline-block;
+   background-image: url('..\\images\\icon-arrow-down.svg');
+   background-repeat: no-repeat;
+   border: 0px;
+
+}
+}
+@media(max-width:375px){
+   body{
+      width:375px;
+      height:745px;
+      background-image:linear-gradient( hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+      position: relative;
+      margin:0px;
+      z-index:3;
+  }
+  .main{
+   width:375px;
+   z-index:3;
+   position: relative;
+  
+  padding-top:100px;
+
+
+}
+.container{
+   width:300px;
+   height:510px;
+   background-color: white;
+   margin-left:25px;
+   border-radius: 20px;
+   margin-top:1000px;
+   position:relative;
+}
+.image {
+   
+   left:9%;
+   top:-20%;
+  
+   width:250px;
+   height:300px;
+   z-index:1;
+   background-image: url('..\\images\\illustration-woman-online-mobile.svg');
+  
+   position: absolute;
+   background-position-x: right;
+   
+   background-repeat: no-repeat;
+ }
+ img{
+   display:none;
+ }
+ .hide{
+   display:none;
+ }
+ .head{
+   width:65px;
+   height:50px;
+   left:38%;
+   position:absolute;
+   top:18%;
+}
+.content{
+   width:290px;
+   height:350px;
+   position:absolute;
+   left:10px;
+   top:35%;
+   
+
+}
+.q1{
+   padding-top: 0%;
+   left:10px;
+   position:absolute;
+ 
+}
+.q1.active p {
+  color:hsl(237, 12%, 33%);
+  font-weight: bolder;
+  font-size: 14px;
+}
+.q2.active p {
+  color:hsl(237, 12%, 33%);
+  font-weight: bolder;
+  font-size: 14px;
+}
+.q3.active p {
+  color:hsl(237, 12%, 33%);
+  font-weight: bolder;
+  font-size: 14px;
+}
+.q4.active p {
+  color:hsl(237, 12%, 33%);
+  font-weight: bolder;
+  font-size: 14px;
+}
+.q5.active p {
+  color:hsl(237, 12%, 33%);
+  font-weight: bolder;
+  font-size: 14px;
+}
+p{
+   font-size: 14px;
+   font-weight:400, 700;
+   font-family: 'Kumbh Sans', sans-serif;
+   color:hsl(240, 6%, 50%);
+}
+p:hover{
+  color:hsl(14, 88%, 65%);
+  font-weight: bold;
+}
+
+.hide{
+  
+   display:none;
+}
+hr{
+   color: hsl(240, 5%, 91%);
+   width:260px;
+   margin-inline-end: 0px;
+   margin-block-start: 0px;
+   margin-inline-start: 0%;
+}
+.q2{
+   padding-top: 0%;
+   left:10px;
+   position:relative;
+   top:50px;
+}
+.q3{
+  padding-top: 0%;
+  left:10px;
+  position:relative;
+  top:50px;
+}
+.q4{
+  padding-top: 0%;
+  left:10px;
+  position:relative;
+  top:50px;
+}
+.q5{
+  padding-top: 0%;
+  left:10px;
+  position:relative;
+  top:50px;
+}
+.b1{
+  height:8px;
+  width:10px;
+  display: inline-block;
+  background-image: url('..\\images\\icon-arrow-down.svg');
+  background-repeat: no-repeat;
+  border: 0px;
+ 
+
+}
+
+
+.b2{
+  height:8px;
+  width:10px;
+  display: inline-block;
+  background-image: url('..\\images\\icon-arrow-down.svg');
+  background-repeat: no-repeat;
+  border: 0px;
+
+}
+.b3{
+   height:8px;
+   width:10px;
+   display: inline-block;
+   background-image: url('..\\images\\icon-arrow-down.svg');
+   background-repeat: no-repeat;
+   border: 0px;
+
+}
+.b4{
+   height:8px;
+   width:10px;
+   display: inline-block;
+   background-image: url('..\\images\\icon-arrow-down.svg');
+   background-repeat: no-repeat;
+   border: 0px;
+
+}
+.b5{
+   height:8px;
+   width:10px;
+   display: inline-block;
+   background-image: url('..\\images\\icon-arrow-down.svg');
+   background-repeat: no-repeat;
+   border: 0px;
+
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="http://localhost/dms/login.php" class="login-link">Login</a>
+        </nav>
+    </header>
+    <section class="banner" style="background-image: url(&quot;./images/med.jpg&quot;);">
+        <div class="homepagecontainer">
+            <div class="bannerheader">
+                <h1>Dispensary Management System</h1>
+                <p>Where Efficiency Meets Growth</p>
+            </div>
+        </div>
+    </section>
+    <section class="about section">
+        <div class="container">
+            <h2 class="section-header">About Us</h2>
+            <div class="section-content">
+                <p>Welcome to the Dispensary Management System! We specialize in providing advanced solutions for efficient management of dispensaries.</p>
+            </div>
+        </div>
+    </section>
+    <section class="features section">
+        <div class="container">
+            <h2 class="section-header">Our Features</h2>
+            <div class="section-content">
+                <p>Explore our comprehensive features that help dispensaries streamline operations, manage inventory, and grow their business.</p>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+      <div class="head">
+        <h1>FAQ</h1>
+      </div>
+      <div class="content">
+        <div class="q1">
+          <p>How many team members can I invite? <button class="b1"></button></p>
+          
+          <div class="q1-ans hide">
+          <p style="font-weight: 400, 700;color:hsl(240, 6%, 50%);font-size: 12px;">You can invite up to 2 additional users on the Free plan.<br> There is no limit on 
+            team members for the Premium plan.</p>
+            
+          </div>
+          <hr>
+        </div>
+        <div class="q2">
+          <p>What is the maximum file upload size? &nbsp;<button class="b2"></button></p>
+          <div class="q2-ans hide">
+          <p style="font-weight: 400, 700;color:hsl(240, 6%, 50%);font-size: 12px;">No more than 2GB. All files in your account must <br>fit your allotted storage space.</p>
+          </div>
+          <hr>
+        </div>
+        <div class="q3">
+          <p>How do I reset my password?&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; <button class="b3"></button></p>
+          <div class="q3-ans hide">
+          <p style="font-weight: 400, 700;color:hsl(240, 6%, 50%);font-size: 12px;">Click “Forgot password” from the login page or <br> “Change password” from your profile page.
+            A <br>reset link will be emailed to you.</p>
+          </div>
+          <hr>
+        </div>
+        <div class="q4">
+          <p>Can I cancel my subscription?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  <button class="b4"></button></p>
+          <div class="q4-ans hide">
+          <p style="font-weight: 400, 700;color:hsl(240, 6%, 50%);font-size: 12px;">Yes! Send us a message and we’ll process your <br>srequest no questions asked.
+          </p>
+          </div>
+          <hr>
+        </div>
+        <div class="q5">
+          <p>Do you provide additional support?&nbsp; &nbsp; &nbsp; &nbsp;<button class="b5"></button></p>
+          <div class="q5-ans hide">
+          <p style="font-weight: 400, 700;color:hsl(240, 6%, 50%);font-size: 12px;">Chat and email support is available 24/7. Phone <br> lines are open during normal business hours.
+          </p>
+          </div>
+          <hr>
+        </div>
+      </div>
+   
+      <div class="first">
+        
+       
+        <div class="background">
+          
+         
+          <div class="image">
+            <img src="./Dispensary Management System_files/illustration-box-desktop.svg" alt="">
+           
+           
+          
+        </div>
+      </div>
+  
+    </div>
+    
+    
+
+    </div>
+
+    <section class="contact section">
+        <div class="container">
+            <h2 class="section-header">Contact Us</h2>
+            <div class="section-content">
+                <p>If you have any questions or inquiries, feel free to reach out to us at <a href="mailto:info@dispensary.com">info@dispensary.com</a>.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2023 Dispensary Management System</p>
+    </footer>
+
+    <script>
+        const images = [
+            "./images/med.jpg",
+            "./images/medicine.jpg",
+            "./images/m.jpg"
+        ];
+
+        const banner = document.querySelector(".banner");
+        let currentImageIndex = 0;
+
+        function changeBackgroundImage() {
+            banner.style.backgroundImage = `url(${images[currentImageIndex]})`;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+
+        setInterval(changeBackgroundImage, 3000); // Change image every 3 seconds
+
+
+        const q1answer = document.querySelector(".q1-ans");
+const q2answer = document.querySelector(".q2-ans");
+const q3answer = document.querySelector(".q3-ans");
+const q4answer = document.querySelector(".q4-ans");
+const q5answer = document.querySelector(".q5-ans");
+const button1 = document.querySelectorAll(".b1");
+const button2 = document.querySelectorAll(".b2");
+const button3 = document.querySelectorAll(".b3");
+const button4 = document.querySelectorAll(".b4");
+const button5 = document.querySelectorAll(".b5");
+q1answer.classList.add("hide");
+q2answer.classList.add("hide");
+q3answer.classList.add("hide");
+q4answer.classList.add("hide");
+q5answer.classList.add("hide");
+
+
+const change1 = () => {
+  if (q1answer.classList.contains("hide")) {
+    q1answer.classList.remove("hide");
+    q1.classList.add("active");
+   
+    
+  }
+  else{
+  q1answer.classList.add("hide");
+  q1.classList.remove("active"); 
+  
+
+  }
+};
+
+button1.forEach((button) => button.addEventListener("click", change1));
+
+const change2 = () => {
+  if (q2answer.classList.contains("hide")) {
+    q2answer.classList.remove("hide");
+    q2.classList.add("active");
+  } else {
+    q2answer.classList.add("hide");
+    q2.classList.remove("active");
+  }
+};
+
+button2.forEach((button) => button.addEventListener("click", change2));
+
+const change3 = () => {
+  if (q3answer.classList.contains("hide")) {
+    q3answer.classList.remove("hide");
+    q3.classList.add("active");
+  } else {
+    q3answer.classList.add("hide");
+    q3.classList.remove("active");
+  }
+};
+
+button3.forEach((button) => button.addEventListener("click", change3));
+
+const change4 = () => {
+  if (q4answer.classList.contains("hide")) {
+    q4answer.classList.remove("hide");
+    q4.classList.add("active");
+  } else {
+    q4answer.classList.add("hide");
+    q4.classList.remove("active");
+  }
+};
+
+button4.forEach((button) => button.addEventListener("click", change4));
+
+const change5 = () => {
+  if (q5answer.classList.contains("hide")) {
+    q5answer.classList.remove("hide");
+    q5.classList.add("active");
+  } else {
+    q5answer.classList.add("hide");
+    q5.classList.remove("active");
+  }
+};
+
+button5.forEach((button) => button.addEventListener("click", change5));
+    </script>
+
+
+</body></html>
