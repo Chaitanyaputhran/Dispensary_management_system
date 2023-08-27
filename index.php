@@ -14,8 +14,10 @@
             background-size: cover;
             background-position: center;
             transition: background-image 1s; 
-            margin-top: 2px;/* Transition duration */
-            background-image: url( './images/m.jpg');
+            margin-top: 10px;/* Transition duration */
+            background-image: url( './images/banner.jpg');
+            margin-left: 20px;
+            margin-right:20px
        
             
         }
@@ -64,7 +66,7 @@
 .image {
    
     left: 15%;
-    top:850px;
+    top:950px;
    
     width:500px;
     height:359px;
@@ -92,7 +94,7 @@
     height:50px;
     left:840px;
     position:absolute;
-    top:850px;
+    top:1000px;
  }
  .head h1{
     font-family: 'Kumbh Sans', sans-serif;
@@ -103,7 +105,7 @@
     height:385px;
     position:absolute;
     left:800px;
-    top:1000px;
+    top:1100px;
     
 
  }
@@ -146,7 +148,7 @@
  }
  p:hover{
    color:hsl(14, 88%, 65%);
-   font-weight: bold;
+   font-weight: bolder;
  }
 
  .hide{
@@ -276,46 +278,17 @@
     fill: white;
 }
 /* Your existing styles here */
-
-.photo-collage {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.photo-collage img {
-    width: calc(50% - 10px); /* Adjust width based on your design */
-    border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.photo-collage img:hover {
-    transform: scale(1.05);
-}
-/* Your existing styles here */
-
 .about {
-    background-color: #f8f8f8;
+    background-color:#eeeeee;
     padding: 60px 0;
+    position: relative; /* Add this to the .about section */
 }
 
 .about .container {
     text-align: center;
 }
 
-.section-header {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.section-content {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-/* Your existing styles here */
+/* ... existing styles ... */
 
 .header {
     background-color: #333;
@@ -324,6 +297,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
+    
    
     width:100%;
     
@@ -370,6 +344,29 @@
 .navigation a:hover {
     color: #ff8000;
 }
+.section-content {
+    font-size: 1.2rem;
+    font-weight:bold;
+    line-height: 1.6;
+    color: #555;
+    width: 600px;
+    margin-left:400px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#learn {
+    background-color: #ff8000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 40px;
+}
+
+#learn:hover {
+    background-color: pink; /* Change color on hover */
+}
 
 
 
@@ -402,18 +399,14 @@
     </section>
     <section class="about section" id="about">
     <div class="container">
-        <h2 class="section-header">About Us</h2>
+        <h2  style=font-size:50px; class="section-header">About Us</h2>
         <div class="section-content">
-            <p>Welcome to the Dispensary Management System! We specialize in providing advanced solutions for efficient management of dispensaries. Our mission is to empower dispensaries with cutting-edge tools that streamline operations, boost productivity, and enhance customer experiences.</p>
-            <p>With years of experience in the industry, we understand the unique challenges dispensaries face. Our team of experts is dedicated to crafting solutions that cater to the specific needs of your business. From inventory management to patient engagement, we offer a comprehensive suite of features designed to drive growth and success.</p>
-            <p>At Dispensary Management System, we believe that efficiency meets growth. Join us on this journey as we revolutionize dispensary management and help you unlock your business's full potential.</p>
-        </div>
-        <div class="photo-collage">
-            <img src="photo1.jpg" alt="Photo 1">
-            <img src="photo2.jpg" alt="Photo 2">
-        </div>
+            <p style="color: black; font-size:20px">Welcome to the Dispensary Management System! We specialize in providing advanced solutions for efficient management of dispensaries. </p>
+           <button id=learn>Learn More</button>
+       
     </div>
 </section>
+
 
     <section class="features section" id="features">
         <div class="container">
@@ -511,9 +504,9 @@
 
     <script>
         const images = [
-            "./images/med.jpg",
+            "./images/med1.jpg",
             "./images/medicine.jpg",
-            "./images/m.jpg"
+            "./images/banner.jpg"
         ];
 
         const banner = document.querySelector(".banner");
