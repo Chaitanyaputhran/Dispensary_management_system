@@ -30,5 +30,18 @@ The Dispensary Management System (DMS) is a web-based application designed to ef
 
 5. **Order Confirmation**: Manage supplier orders, confirm and process orders, and keep a record of order history.
 
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
+
+## Contributing
+
+Contributions to the Dispensary Management System project are welcome. If you'd like to contribute, please follow the guidelines outlined in the project's repository.
+
+
 
 
