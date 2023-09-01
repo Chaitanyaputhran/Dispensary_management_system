@@ -40,7 +40,13 @@ The Dispensary Management System (DMS) is a web-based application designed to ef
 
 ## Contributing
 
-Contributions to the Dispensary Management System project are welcome. If you'd like to contribute, please follow the guidelines outlined in the project's repository.
+Contributions are welcome! Feel free to fork the repository, make improvements, and submit pull requests.
+
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request.
 
 
 
